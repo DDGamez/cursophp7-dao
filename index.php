@@ -2,11 +2,26 @@
 	
 	require_once("config.php");
 	
-	$root = new Usuario();
+	// Carrega somente um usuario
+	//$root = new Usuario();
+	//$root->loadbyid(3);
+	//echo $root;
 	
-	$root->loadbyid(3);
+	//Carrega uma lista de usuario 
+	//$lista = Usuario::getList();
+	//echo json_encode($lista);
 	
-	echo $root;
+	//Carrega uma lista de usuario buscando pelo login
+	//$search = Usuario::search("jo");
+	//echo json_encode($search);	
+	
+	//carrega os usuario usando ow login e a senha
+	$usuario = new Usuario();
+	$usuario->login("Jonas", "456");
+	
+	echo $usuario;
+	
+	
 	
 	
 	
