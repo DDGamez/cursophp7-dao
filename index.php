@@ -37,10 +37,15 @@
 	//echo json_encode($usuarios);
 	
 	//Alterando um dado atraves do UPDATE
+	//$usuario = new Usuario();
+	//$usuario->loadbyid(12);
+	//$usuario->update("Manu", "13@@@46");
+	//echo $usuario;
+
+	//Deletando Dados
 	$usuario = new Usuario();
-	$usuario->loadbyid(12);
-	
-	$usuario->update("Manu", "13@@@46");
+	$usuario->loadbyid(11);
+	$usuario->delete();
 	
 	echo $usuario;
 	
